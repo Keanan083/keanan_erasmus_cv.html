@@ -45,9 +45,9 @@ nav ul {
     padding: 0;
     overflow: hidden;
     background-color: rgba(51, 51, 51, 0.4);
-    position: -webkit-sticky; /* Safari */
-    position: sticky;
+    position: fixed;
     top: 0;
+    width: 100%
 }
 
 li {
@@ -81,3 +81,62 @@ h1 {
 h {
     font-family: 'Anton', sans-serif;
 }
+
+h5 {
+    font-family: 'Cookie', cursive;
+    font-size: 20px;
+}
+
+
+.span-name {
+    float: right;
+    padding-right: 40px;
+}
+
+.span-dob {
+    float: right;
+    padding-right: 40px;
+}
+
+.span-gender {
+    float: right;
+    padding-right: 40px;
+}
+
+.span-race {
+    float: right;
+    padding-right: 40px;
+}
+
+.span-married {
+    float: right;
+    padding-right: 40px;
+}
+
+.span-address {
+    float: right;
+    padding-right: 40px;
+}
+
+.span-nation {
+    float: right;
+    padding-right: 40px;
+}
+
+.span-post {
+    float: right;
+    padding-right: 40px;
+}
+
+.span-record {
+    float: right;
+    padding-right: 40px;
+}
+
+.line-break2 {
+    width: 325px;
+    margin: 0 auto;
+    border-top: 1px solid white;
+}
+
+
