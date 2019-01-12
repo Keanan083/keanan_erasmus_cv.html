@@ -7,7 +7,7 @@ html {
     font-family: 'Fjalla One', sans-serif;
   }
 
-  body {
+body {
       color: white;
   }
 
@@ -16,7 +16,6 @@ html {
     height: 450px;
     background: rgba(0,0,0,0.4);
     padding: 40px;
-    color: white;
     margin: 0 auto;
     margin-top: 140px;
     text-align: center;
@@ -65,14 +64,15 @@ li a {
 
 .aboutme-box {
     color: white;
-    background-color: rgba(34, 139, 34, 0.575);
-    width: 85%;
+    background-color: rgba(0,0,0,0);
+    width: 100%;
     height: 300px;
     margin: 0 auto;
+    margin-top: 5rem;
 }
 
 li a:hover {
-    background-color: rgba(248, 2, 2, 0.479);
+    color: rgba(248, 2, 2);
 }
 
 .personal-box {
@@ -80,6 +80,7 @@ li a:hover {
     height: 450px;
     width: 400px;
     border-radius: 5%;
+    margin-top: 5rem;
 }
 
 h1 {
@@ -96,47 +97,7 @@ h5 {
 }
 
 
-.span-name {
-    float: right;
-    padding-right: 40px;
-}
-
-.span-dob {
-    float: right;
-    padding-right: 40px;
-}
-
-.span-gender {
-    float: right;
-    padding-right: 40px;
-}
-
-.span-race {
-    float: right;
-    padding-right: 40px;
-}
-
-.span-married {
-    float: right;
-    padding-right: 40px;
-}
-
-.span-address {
-    float: right;
-    padding-right: 40px;
-}
-
-.span-nation {
-    float: right;
-    padding-right: 40px;
-}
-
-.span-post {
-    float: right;
-    padding-right: 40px;
-}
-
-.span-record {
+.mainspan {
     float: right;
     padding-right: 40px;
 }
@@ -145,6 +106,13 @@ h5 {
     width: 325px;
     margin: 0 auto;
     border-top: 1px solid white;
+}
+
+.contact-box {
+    background-color: rgba(0,0,0,0.4);
+    width: 35%;
+    height: 300px;
+    margin-top: 5rem;
 }
 
 
