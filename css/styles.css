@@ -1,22 +1,22 @@
 html { 
-    background: url(../images/Classic-Background-Images-For-Wordpress-Blogs-30.jpg) no-repeat center center fixed; 
+    background: url(../images/defalt2.png) no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
     font-family: 'Fjalla One', sans-serif;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /* this function is used to activate smooth scroll function*/
   }
-
+/* changed my basic font color to white */
 body {
       color: white;
   }
 
+/* introduction div styling */
 .prof-box {
     width: 400px;
     height: 450px;
     border-style: solid;
-    background-color: rgba(0,0,0,0.4);
     border-color: white;
     padding: 40px;
     margin: 0 auto;
@@ -24,26 +24,22 @@ body {
     text-align: center;
     border-radius: 5%;
 }
-
+/* profile pic styling */
 .prof-pic {
     border-radius: 10%;
     border-style: solid;
-    border-color: white;
-    border-radius: 5%;
+    border-color: white; /*made my profile pic stand out a little more with a border and a color*/
+    border-radius: 5%; /* made my profile pics corners slightly rounded for neatness*/
 }
 
+/* put a line break under my name and title to make my div look neater */
 .line-break {
     width: 325px;
     margin: 0 auto;
     border-top: 1px solid white;
 }
 
-.fab  {
-    padding-right: 2rem;
-    width: 2rem;
-    height: 2rem;
-}
-
+/* navbar styling and placment */
 nav ul {
     list-style-type: none;
     margin: 0;
@@ -51,9 +47,9 @@ nav ul {
     overflow: hidden;
     border-style: solid;
     border-color: rgb(248, 2, 2);
-    position: fixed;
+    position: fixed; /* to let navbar stay on top of the screen as you scroll down*/
     top: 0;
-    width: 100%
+    width: 100% /* so that the navbar covers the whole top section of the webpage*/
 }
 
 li {
