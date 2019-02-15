@@ -79,6 +79,8 @@ li a:hover {
     text-align: center;
     padding-right: 15rem;
     padding-left: 15rem;
+    line-height: 2rem;
+    padding-bottom: 3rem;
 }
 
 /* styling for my personal info box */
@@ -93,6 +95,7 @@ li a:hover {
     padding-top: 1rem; /* to create space between my box heading and the border */
     padding-bottom: 1rem; 
     padding-left: 2rem; /* so that the data inside the box doesn't touch the border */
+    margin: 0 auto;
 }
 
 /* header for personal box */
@@ -131,11 +134,13 @@ h5 {
 
 .skills-section {
     text-align: center;
+    margin-top: 5rem;
 }
 
 .skills-image {
     width: 55rem;
     height: 23rem;
+    padding-bottom: 3rem;
 }
 
 /* the box to hold my contact details */
@@ -147,6 +152,7 @@ h5 {
     border-color: white;
     padding-left: 2rem;
     border-radius: 5%;
+    margin: 0 auto;
 }
 
 /* the header inside my contact box */
@@ -154,11 +160,172 @@ h5 {
     text-align: center;
 }
 
-/* responsive for iPad */
-@media only screen 
-  and (min-device-width: 768px) 
-  and (max-device-width: 1024px) 
-  and (-webkit-min-device-pixel-ratio: 1) {
+/* Desktop responsiveness */
+@media only screen and (min-width:769px){
+    html { 
+        background: url(../images/midnight.jpg) no-repeat center center fixed; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        font-family: 'Fjalla One', sans-serif;
+        scroll-behavior: smooth; /* this function is used to activate smooth scroll function*/
+      }
+    /* changed my basic font color to white */
+    body {
+          color: white;
+      }
+    
+    /* introduction div styling */
+    .prof-box {
+        width: 25rem;
+        height: 25rem;
+        border-style: solid;
+        border-color: white;
+        padding: 2.5rem;
+        margin: 0 auto;
+        margin-top: 8.75rem;
+        text-align: center;
+        border-radius: 5%;
+    }
+    /* profile pic styling */
+    .prof-pic {
+        border-radius: 10%;
+        border-style: solid;
+        border-color: white; /*made my profile pic stand out a little more with a border and a color*/
+        border-radius: 5%; /* made my profile pics corners slightly rounded for neatness*/
+    }
+    
+    /* put a line break under my name and title to make my div look neater */
+    .line-break {
+        width: 20.3125rem;
+        margin: 0 auto;
+        border-top: 0.0625rem solid white;
+    }
+    
+    /* navbar styling and placment */
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: black;
+        position: fixed; /* to let navbar stay on top of the screen as you scroll down*/
+        top: 0;
+        width: 100% /* so that the navbar covers the whole top section of the webpage*/
+    }
+    
+    li {
+        float: left;
+    }
+    
+    li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 0.875rem 1rem;
+        text-decoration: none;
+    }
+    
+    /* changed navbar hover colour to red */
+    li a:hover {
+        color: rgba(248, 2, 2);
+        text-shadow: 100%;
+    }
+    
+    /* about me header */
+    .about {
+        text-align: center; 
+    }
+    
+    /* paragraph tags in my about section */
+    .about-p {
+        text-align: center;
+        padding-right: 15rem;
+        padding-left: 15rem;
+        line-height: 2rem;
+        padding-bottom: 3rem;
+    }
+    
+    /* styling for my personal info box */
+    .personal-box {
+        height: 28.125rem;
+        width: 28.125rem;
+        border-radius: 5%; /* rounded corners*/
+        border-style: solid; /* solid white border around the box*/
+        border-color: white;
+        margin-top: 5rem; /* for more space between about me section and personal box */
+        margin-bottom: 5rem; /* more space between skills section and personal box */
+        padding-top: 1rem; /* to create space between my box heading and the border */
+        padding-bottom: 1rem; 
+        padding-left: 2rem; /* so that the data inside the box doesn't touch the border */
+        margin: 0 auto;
+    }
+    
+    /* header for personal box */
+    .personal {
+        text-align: center;
+    }
+    
+    h1 {
+        text-decoration: underline; /* underline all headings */
+        color: rgb(248, 2, 2);
+    }
+    
+    /* changed all headings to font type Anton */
+    h {
+        font-family: 'Anton', sans-serif;
+    }
+    
+    /* all h5 headings will be this size and font type */
+    h5 {
+        font-family: 'Cookie', cursive;
+        font-size: 1.25rem;
+    }
+    
+    
+    .mainspan {
+        float: right; /* used to separate my data from each other making it easier to read */
+        padding-right: 2.5rem; /* the amount of space in between my spans */
+    }
+    
+    /* another line break for my personal box */
+    .line-break2 {
+        width: 21.875rem;
+        margin: 0 auto;
+        border-top: 0.0625rem solid white;
+    }
+    
+    .skills-section {
+        text-align: center;
+        margin-top: 5rem;
+    }
+    
+    .skills-image {
+        width: 55rem;
+        height: 23rem;
+        padding-bottom: 3rem;
+    }
+    
+    /* the box to hold my contact details */
+    .contact-box {
+        width: 35%;
+        height: 15.625rem;
+        margin-top: 5rem;
+        border-style: solid;
+        border-color: white;
+        padding-left: 2rem;
+        border-radius: 5%;
+        margin: 0 auto;
+    }
+    
+    /* the header inside my contact box */
+    .info {
+        text-align: center;
+    }
+}
+/* responsive for tablet */
+@media only screen and (min-width:376px) and (max-width:768px) {
 
     html { 
         background: url(../images/midnight.jpg) no-repeat center center fixed; 
@@ -255,6 +422,7 @@ h5 {
         padding-top: 1rem; /* to create space between my box heading and the border */
         padding-bottom: 1rem; 
         padding-left: 2rem; /* so that the data inside the box doesn't touch the border */
+        margin: 0 auto;
     }
     
     /* header for personal box */
@@ -309,6 +477,7 @@ h5 {
         border-color: white;
         padding-left: 2rem;
         border-radius: 5%;
+        margin: 0 auto;
     }
     
     /* the header inside my contact box */
@@ -318,12 +487,8 @@ h5 {
 
 }
 
-/* responsive for iPhone 4 an 4S */
-@media only screen 
-  and (min-device-width: 320px) 
-  and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2) {
-
+/* responsive for mobile */
+@media only screen and (max-width:375px){
     html { 
         background: url(../images/midnight.jpg) no-repeat center center fixed; 
         -webkit-background-size: cover;
@@ -340,12 +505,12 @@ h5 {
     
     /* introduction div styling */
     .prof-box {
-        width: 100%;
+        width: 25rem;
         height: 25rem;
         border-style: solid;
         border-color: white;
         padding: 2.5rem;
-        margin-left: 55%;
+        /* margin-left: 25%; */
         margin-top: 8.75rem;
         text-align: center;
         border-radius: 5%;
@@ -397,16 +562,14 @@ h5 {
     
     /* about me header */
     .about { 
-        width: 100%;
-        margin-left: 70%;
         text-align: center;
     }
     
     /* paragraph tags in my about section */
     .about-p {
         text-align: center;
-        width: 100%;
-        padding-left: 70%;
+        padding-right: 1rem;
+        padding-left: 1rem;
     }
     
     /* styling for my personal info box */
@@ -421,6 +584,7 @@ h5 {
         padding-top: 1rem; /* to create space between my box heading and the border */
         padding-bottom: 1rem; 
         padding-left: 2rem; /* so that the data inside the box doesn't touch the border */
+        margin: 0 auto;
     }
     
     /* header for personal box */
@@ -460,16 +624,10 @@ h5 {
     .skills-section {
         text-align: center;
     }
-
-    .skills-h {
-        width: 100%;
-        padding-left: 70%;
-    }
     
     .skills-image {
-        width: 100%;
-        height: 100%;
-        margin-left: 70%;
+        width: 40rem;
+        height: 15rem;
     }
     
     /* the box to hold my contact details */
@@ -481,6 +639,7 @@ h5 {
         border-color: white;
         padding-left: 2rem;
         border-radius: 5%;
+        margin: 0 auto;
     }
     
     /* the header inside my contact box */
@@ -489,4 +648,4 @@ h5 {
     }
 
 }
-
+   
